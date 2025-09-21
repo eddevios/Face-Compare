@@ -103,8 +103,8 @@ FaceCompare/
 ## Instalación de Dependencias
 
 El proyecto requiere dos paquetes SPM de Regula:
-https://github.com/regulaforensics/FaceSDK-Swift-Package
-https://github.com/regulaforensics/FaceCoreBasic-Swift-Package
+- https://github.com/regulaforensics/FaceSDK-Swift-Package
+- https://github.com/regulaforensics/FaceCoreBasic-Swift-Package
 
 **Nota**: `FaceCoreBasic` es necesario para las funciones básicas de liveness y comparación facial. Sin él obtienes el error "Core framework missed".
 
@@ -116,3 +116,9 @@ https://github.com/regulaforensics/FaceCoreBasic-Swift-Package
 
 ## Documentación Oficial
 https://docs.regulaforensics.com/develop/face-sdk/mobile/?utm_source=github
+
+## Aspectos a Mejorar o Extender
+- Persistencia avanzada con análisis local, guardar un histórico y estadísticas detalladas.
+- Instrucciones y feedback en el idioma del usuario.
+- Mostrar resultados de similitud no solo como porcentaje sino con barras de progreso, colores o explicaciones para mejorar la UX.
+
