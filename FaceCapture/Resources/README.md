@@ -116,3 +116,9 @@ El proyecto requiere dos paquetes SPM de Regula:
 
 ## Documentación Oficial
 https://docs.regulaforensics.com/develop/face-sdk/mobile/?utm_source=github
+
+## Aspectos a Mejorar o Extender
+- Persistencia avanzada con análisis local, guardar un histórico y estadísticas detalladas.
+- Instrucciones y feedback en el idioma del usuario.
+- Mostrar resultados de similitud no solo como porcentaje sino con barras de progreso, colores o explicaciones para mejorar la UX.
+
