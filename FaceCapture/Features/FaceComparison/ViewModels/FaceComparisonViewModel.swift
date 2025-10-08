@@ -60,7 +60,7 @@ final class FaceComparisonViewModel {
     func initializeSDK() {
         Task {
             do {
-                try await faceSDKManager.initialize()  // CAMBIADO: Service -> Manager
+                try await faceSDKManager.initialize()
                 print("SDK initialization completed successfully")
             } catch {
                 await MainActor.run {
@@ -83,7 +83,7 @@ final class FaceComparisonViewModel {
         Task {
             do {
                 print("Starting face capture...")
-                let capturedImage = try await faceSDKManager.captureForLiveness()  // CAMBIADO: Service -> Manager
+                let capturedImage = try await faceSDKManager.captureForLiveness()
                 
                 await MainActor.run {
                     self.model.capturedImage = capturedImage
@@ -118,7 +118,7 @@ final class FaceComparisonViewModel {
         Task {
             do {
                 let similarityScore = try await faceSDKManager.compareFaces(image1: img1, image2: img2)
-                // El score suele venir en 0..1, conviértelo a %
+                
                 let percent = Int(round(similarityScore * 100))
                 await MainActor.run {
                     self.model.comparisonResult = "Similitud: \(percent)%"
