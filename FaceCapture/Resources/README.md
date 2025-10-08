@@ -6,7 +6,7 @@ Demo de integración de Regula FaceSDK sobre UIKit. Permite capturar el rostro d
 
 ## Funcionalidades Principales
 
-- **Captura facial con liveness**: Detección de rostros reales usando el SDK de Regula
+- **Captura facial con liveness**: Detección de rostros reales usando el SDK de Regula sin requerir acciones del usuario
 - **Selección de imágenes**: Desde galería o cámara usando PHPicker y UIImagePicker  
 - **Comparación facial**: Análisis de similitud entre dos rostros con resultado porcentual
 - **Gestión de estados**: UI reactiva con feedback visual durante procesos
@@ -66,7 +66,7 @@ FaceCompare/
 
 ## Flujo de Usuario
 
-1. **Inicialización**: El SDK se inicializa automáticamente al abrir la app
+1. **Inicialización**: El SDK se inicializa cuando lo necesita el ViewModel
 2. **Captura**: Usuario pulsa "Capture Face" → Se abre liveness detection
 3. **Selección**: Usuario selecciona segunda imagen desde galería/cámara  
 4. **Comparación**: Sistema compara ambas imágenes y muestra porcentaje
