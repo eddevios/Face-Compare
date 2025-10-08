@@ -47,9 +47,9 @@ FaceCompare/
     └── LaunchScreen.storyboard
 ```
 
-## Resumen de Directorios
+## Resumen de Directorios (Capas)
 
-- **Application**: Punto de entrada y configuración inicial de la app
+- **Application/**: Punto de entrada y configuración inicial de la app
 - **Core/**: Servicios compartidos, extensiones y constantes reutilizables
 - **Features/**: Funcionalidad principal de comparación facial con su modelo, vista y viewmodel
 - **Resources/**: Assets y recursos visuales
@@ -57,7 +57,9 @@ FaceCompare/
 ## Principios Clave
 
 - **Separación de responsabilidades**: Manager para SDK, ViewModel para lógica, View para UI
+- **Inicialización lazy del SDK**: El SDK se inicializa solo cuando lo necesita el ViewModel, optimizando recursos
 - **Estado observable**: Uso de Combine para comunicación reactiva
+- **Liveness pasivo**: Detección de vida sin requerir acciones del usuario, mejorando significativamente la UX
 - **UI programática**: Layout con StackView y Auto Layout constraints
 - **Async/await**: Manejo moderno de concurrencia para operaciones del SDK
 - **Gestión centralizada**: Un solo punto de acceso al SDK de Regula
